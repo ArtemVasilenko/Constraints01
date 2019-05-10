@@ -1,20 +1,23 @@
-//
-//  ViewController.swift
-//  Constraints01
-//
-//  Created by Артем on 5/10/19.
-//  Copyright © 2019 Артем. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var square: UIView = {
+        let myView = UIView()
+        myView.frame = CGRect(x: 0, y: 0, width: 20, height: 20)
+        myView.translatesAutoresizingMaskIntoConstraints = false
+        
+        return myView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
+    
+    
+    func createSquareWithConstraints() {
+        
+    }
+    
 }
 
